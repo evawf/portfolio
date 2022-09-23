@@ -1,0 +1,190 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #bedbbb;
+  background-color: #707070;
+}
+
+h2 {
+  font-family: "Aclonica", sans-serif;
+}
+
+a:link {
+  color: #bedbbb;
+}
+
+a:visited {
+  color: #8db596;
+}
+
+a:hover {
+  color: #a20a0a;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sideL {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.thingsIdo {
+  text-align: left;
+}
+
+#thingsIdo,
+ul {
+  padding: 0 15px;
+}
+
+#avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+#contactBtn {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #b8e1dd;
+}
+
+#contactBtn,
+a {
+  margin: 10px 10px;
+}
+
+.sideR {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+  padding-top: 20px;
+  border-top: 3px double #8db596;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.card {
+  width: 400px;
+  height: 400px;
+  margin: 30px;
+  margin-bottom: 70px;
+  background-color: #707070;
+  border-radius: 10px;
+  border: 2px solid #8db596;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 #8db596;
+}
+
+.footer {
+  margin: 5px 0;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 100%;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    background-color: #062925;
+    color: #b8e1dd;
+  }
+
+  .main {
+    flex-direction: row;
+    height: 850px;
+    width: 100%;
+  }
+
+  .sideL {
+    width: 20%;
+    height: auto;
+    flex-direction: column;
+    margin: 0 50px;
+  }
+
+  #avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+
+  #contactBtn {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    /* font-size: 30px; */
+  }
+
+  #contactBtn,
+  a {
+    margin: 10px 10px;
+  }
+
+  .thingsIdo {
+    margin-left: 20%;
+  }
+
+  .sideR {
+    width: 80%;
+    height: 100%;
+    margin-left: 20px;
+    border-top: none;
+    border-left: 3px double #b8e1dd;
+  }
+
+  .card {
+    width: 250px;
+    height: 250px;
+    border: 2px solid #044a42;
+    background-color: #062925;
+    border-radius: 10px;
+    margin: 40px;
+  }
+}
